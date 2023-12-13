@@ -1,0 +1,45 @@
+.container{
+    width: 100%;
+    height: 700px;
+    border: 2px solid;
+    display: flex; /*will auto arrange from left to right from top left border*/
+
+/* কমেন্ট উঠিয়ে দিয়ে বোঝার জন্য */
+
+    /* flex-direction: row; */              /* arrange from top left border like 1,2,3,4 left to right */
+    /* flex-direction: row-reverse; */      /* arrange from top right border like 4,3,2,1 */
+    /* flex-direction: column; */           /* arrange from top left border from top to bottom direction */
+    /* flex-direction: column-reverse; */   /* revers as pervious column*/
+    /* justify-content: flex-start; */      /* act like flex-direction:row */
+    /* justify-content: flex-end; */        /* arrange top right border like 1,2,3,4*/
+    /* justify-content: center; */          /* arrange at top center 1,2,3,4 */
+    /* justify-content: space-between; */   /* 1 will start from top left border and 4 will be top right border and same space will be 2 and 3 */
+    /* justify-content: space-evenly; */    /* all 4 number will have same space from left and right */
+    /* justify-content: space-around;*/     /* if 1 get space 10px from left between 1 and 3 will be 20px and for 4 right side also 10px like 1 */
+    /* align-items: flex-start*/            /* it will behave like "flex-direction: row" */
+    /* align-items: flex-end */             /* at bottob of container from left border */
+    /* align-items: center; */              /* middle from top and bottom at left border */
+    /* align-items: baseline; */            /* if set box1 font size to 3em then you can realise 1,2,3,4 they are seating on a floor, that's the base line */
+    /* flex-wrap: wrap; */                  /* you can realise when there are more boxes */
+    /* flex-wrap: wrap-reverse; */
+    /* align-content: flex-start; */        /* this property works with "flex-wrap: wrap" property */
+    /* align-content: center; */
+    /* align-content: space-evenly; */
+    /* align-content: space-between; */
+    /* column-gap: 2em; */
+    /* row-gap: 2em; */
+
+
+}
+.box{ 
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid;
+}
+.box1{    background-color: rgba(255, 0, 0, 0.912);  /* order: 2; */}
+.box2{    background-color: rgb(0, 110, 255);       /*align-self: center; */ }
+.box3{    background-color: rgb(0, 255, 60);       /* order: -1; */ }
+.box4{    background-color: rgb(208, 255, 0);       }
